@@ -1,0 +1,12 @@
+uuid: a6d7d1c9-82b5-448f-8c84-c8ab605d3def
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: wOtl3_gv1_DmAWR7w1BD6ynVFMYUAydEWzoWEOkTbfg
+id: media.portrait_3_4
+label: 'Portrait (3:4)'
+targetEntityType: media
+cache: true

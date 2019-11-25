@@ -1,0 +1,9 @@
+bundle: backoffice_thinking
+excluded:
+  - node.type.page
+  - core.entity_view_display.node.page.teaser
+  - field.field.node.page.body
+  - media.type.remote_video
+  - rdf.mapping.node.page
+  - core.base_field_override.node.page.promote
+required: true

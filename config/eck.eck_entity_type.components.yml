@@ -1,0 +1,12 @@
+uuid: ffcd74dd-6ea0-4960-bb5a-e210b5e35f3e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OwTKVds0t_WEVAMWBK80ytaHvik4iGqxHCy0tTfi_Vo
+id: components
+label: Components
+created: true
+changed: true
+uid: true
+title: true
