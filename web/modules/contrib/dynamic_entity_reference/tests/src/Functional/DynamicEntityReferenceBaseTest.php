@@ -28,7 +28,7 @@ class DynamicEntityReferenceBaseTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'field_ui',
     'dynamic_entity_reference',
     'entity_test',
@@ -45,6 +45,11 @@ class DynamicEntityReferenceBaseTest extends BrowserTestBase {
     'administer entity_test fields',
     'administer entity_test content',
   ];
+
+  /**
+   * {@inheritdoc}
+   */
+  protected $defaultTheme = 'stark';
 
   /**
    * Sets the test up.
@@ -234,7 +239,7 @@ class DynamicEntityReferenceBaseTest extends BrowserTestBase {
       'selection_handler' => $settings['entity_test']['handler'],
       'selection_settings_key' => $selection_settings_key,
     ])->toString();
-    $this->assertContains($input->getAttribute('data-autocomplete-path'), $expected_autocomplete_path);
+    $this->assertStringContainsString($input->getAttribute('data-autocomplete-path'), $expected_autocomplete_path);
 
     // Add some extra dynamic entity reference fields.
     $this->getSession()->getPage()->findButton('Add another item')->click();
